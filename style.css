@@ -11,4 +11,4 @@ header{background:var(--panel);border-bottom:4px solid var(--accent);padding:1re
 #footer ul{list-style:none;display:flex;justify-content:space-around;padding:0;}
 .subheader{font-weight:700;font-size:1.1rem;}
 .button{background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px;display:inline-block;margin:10px 0;}
-.button a{color:#fff;text-decoration:none;}
+.button a{color: #000;0B2230;text-decoration:none;}
