@@ -11,7 +11,7 @@ header{background:var(--panel);border-bottom:4px solid var(--accent);padding:1re
 #footer ul{list-style:none;display:flex;justify-content:space-around;padding:0;}
 .subheader{font-weight:700;font-size:1.1rem;}
 .button{background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px;display:inline-block;margin:10px 0;}
-.button a{color: #000;0B2230;text-decoration:none;}
+.button a { padding: 0; color: #000; text-decoration: none; }
 
 /* Touch Targets & Spacing */
 :root { --tap-target: 48px; }
@@ -29,9 +29,6 @@ a.button {
   padding: 12px 16px;
   border-radius: 8px;
 }
-
-/* Keep a button's inner anchor from double padding */
-.button a { padding: 0; color: #fff; text-decoration: none; }
 
 /* adding a gap to ensure continuity */
 .nav-inline { flex-wrap: wrap; gap: 12px; }
