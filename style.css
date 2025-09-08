@@ -13,6 +13,45 @@ header{background:var(--panel);border-bottom:4px solid var(--accent);padding:1re
 .button{background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px;display:inline-block;margin:10px 0;}
 .button a{color: #000;0B2230;text-decoration:none;}
 
+/* Touch Targets & Spacing */
+:root { --tap-target: 48px; }
+
+/* Attributes to make the site more touch friendly */
+.nav-inline a,
+#footer a,
+.button,
+a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--tap-target);
+  min-height: var(--tap-target);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+/* Keep a button's inner anchor from double padding */
+.button a { padding: 0; color: #fff; text-decoration: none; }
+
+/* adding a gap to ensure continuity */
+.nav-inline { flex-wrap: wrap; gap: 12px; }
+#footer ul { flex-wrap: wrap; gap: 12px; justify-content: center; }
+
+/* adding max width for uniformity */
+@media (max-width: 768px) {
+  .nav-inline { justify-content: center; }
+  #footer ul { justify-content: center; }
+}
+
+/* Focus visibility for keyboard users */
+.nav-inline a:focus-visible,
+#footer a:focus-visible,
+.button:focus-visible,
+a.button:focus-visible {
+  outline: 3px solid #333;
+  outline-offset: 2px;
+}
+
 /* Responsive adjustments for tablets and common devices */
 @media (max-width: 768px) {
   body {
