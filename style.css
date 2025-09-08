@@ -12,3 +12,36 @@ header{background:var(--panel);border-bottom:4px solid var(--accent);padding:1re
 .subheader{font-weight:700;font-size:1.1rem;}
 .button{background:var(--accent);color:#fff;padding:10px 15px;border-radius:8px;display:inline-block;margin:10px 0;}
 .button a{color: #000;0B2230;text-decoration:none;}
+
+/* Responsive adjustments for tablets and common devices */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  header {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .nav-inline {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #content_wrapper {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  #overview, #quick_facts {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+  }
+  #footer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
